@@ -14,6 +14,12 @@ final class StringCalculatorTDDTests: XCTestCase {
         let calculator = StringCalculator()
         XCTAssertEqual(try calculator.add(""), 0)
     }
-
+    
+    func testSingleNumberReturnsThatNumber() throws {
+        
+        let calculator = StringCalculator()
+        XCTAssertEqual(try calculator.add("5"), 5)
+        
+    }
     
 }
