@@ -40,4 +40,11 @@ final class StringCalculatorTDDTests: XCTestCase {
         XCTAssertEqual(try calculator.add("//;\n1;2"), 3)
     }
     
+    func testNegativeNumbersThrowError() {
+        let calculator = StringCalculator()
+        XCTAssertThrowsError(try calculator.add("1,-2,-3")) { error in
+            XCTAssertEqual(error.localizedDescription, "negative numbers not allowed: -2,-3")
+        }
+    }
+    
 }

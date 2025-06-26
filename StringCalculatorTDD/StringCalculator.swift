@@ -7,6 +7,17 @@
 
 import Foundation
 
+enum StringCalculatorError: Error, LocalizedError {
+    case negativeNumbersNotAllowed([Int])
+    var errorDescription: String? {
+        switch self {
+        case .negativeNumbersNotAllowed(let negatives):
+            return "negative numbers not allowed: \(negatives.map(String.init).joined(separator: ","))"
+        }
+    }
+}
+
+
 final class StringCalculator {
     
     func add(_ numbers: String) throws -> Int {
@@ -28,6 +39,11 @@ final class StringCalculator {
             .components(separatedBy: delimiter)
         
         let ints = components.compactMap { Int($0) }
+        
+        let negatives = ints.filter { $0 < 0 }
+        if !negatives.isEmpty {
+            throw StringCalculatorError.negativeNumbersNotAllowed(negatives)
+        }
         
         return ints.reduce(0, +)
     }
