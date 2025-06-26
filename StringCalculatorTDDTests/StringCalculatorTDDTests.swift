@@ -31,7 +31,7 @@ final class StringCalculatorTDDTests: XCTestCase {
     func testHandlesNewlines() throws {
         
         let calculator = StringCalculator()
-        XCTAssertEqual(try calculator.add("1\n2,3"), 6)
+        XCTAssertEqual(try calculator.add("1,2\n3"), 6)
     }
     
 }
