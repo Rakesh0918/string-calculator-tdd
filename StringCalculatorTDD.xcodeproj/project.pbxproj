@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		1833F0262E0D9B7D0063AA9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1833EFFE2E0D95530063AA9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1833F0052E0D95530063AA9C;
+			remoteInfo = StringCalculatorTDD;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1833F0062E0D95530063AA9C /* StringCalculatorTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalculatorTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1833F0222E0D9B7C0063AA9C /* StringCalculatorTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = StringCalculatorTDD;
 			sourceTree = "<group>";
 		};
+		1833F0232E0D9B7D0063AA9C /* StringCalculatorTDDTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StringCalculatorTDDTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1833F0032E0D95530063AA9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1833F01F2E0D9B7C0063AA9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				1833F0082E0D95530063AA9C /* StringCalculatorTDD */,
+				1833F0232E0D9B7D0063AA9C /* StringCalculatorTDDTests */,
 				1833F0072E0D95530063AA9C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				1833F0062E0D95530063AA9C /* StringCalculatorTDD.app */,
+				1833F0222E0D9B7C0063AA9C /* StringCalculatorTDDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 1833F0062E0D95530063AA9C /* StringCalculatorTDD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1833F0212E0D9B7C0063AA9C /* StringCalculatorTDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1833F0282E0D9B7D0063AA9C /* Build configuration list for PBXNativeTarget "StringCalculatorTDDTests" */;
+			buildPhases = (
+				1833F01E2E0D9B7C0063AA9C /* Sources */,
+				1833F01F2E0D9B7C0063AA9C /* Frameworks */,
+				1833F0202E0D9B7C0063AA9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1833F0272E0D9B7D0063AA9C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1833F0232E0D9B7D0063AA9C /* StringCalculatorTDDTests */,
+			);
+			name = StringCalculatorTDDTests;
+			packageProductDependencies = (
+			);
+			productName = StringCalculatorTDDTests;
+			productReference = 1833F0222E0D9B7C0063AA9C /* StringCalculatorTDDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					1833F0052E0D95530063AA9C = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					1833F0212E0D9B7C0063AA9C = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 1833F0052E0D95530063AA9C;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				1833F0052E0D95530063AA9C /* StringCalculatorTDD */,
+				1833F0212E0D9B7C0063AA9C /* StringCalculatorTDDTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1833F0042E0D95530063AA9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1833F0202E0D9B7C0063AA9C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1833F01E2E0D9B7C0063AA9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1833F0272E0D9B7D0063AA9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1833F0052E0D95530063AA9C /* StringCalculatorTDD */;
+			targetProxy = 1833F0262E0D9B7D0063AA9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1833F01A2E0D95540063AA9C /* Debug */ = {
@@ -315,6 +390,42 @@
 			};
 			name = Release;
 		};
+		1833F0292E0D9B7D0063AA9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FAD7LT2BQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakesh.in.StringCalculatorTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringCalculatorTDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StringCalculatorTDD";
+			};
+			name = Debug;
+		};
+		1833F02A2E0D9B7D0063AA9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FAD7LT2BQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rakesh.in.StringCalculatorTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringCalculatorTDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StringCalculatorTDD";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -332,6 +443,15 @@
 			buildConfigurations = (
 				1833F01A2E0D95540063AA9C /* Debug */,
 				1833F01B2E0D95540063AA9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1833F0282E0D9B7D0063AA9C /* Build configuration list for PBXNativeTarget "StringCalculatorTDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1833F0292E0D9B7D0063AA9C /* Debug */,
+				1833F02A2E0D9B7D0063AA9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
