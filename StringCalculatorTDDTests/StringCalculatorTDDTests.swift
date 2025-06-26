@@ -22,4 +22,10 @@ final class StringCalculatorTDDTests: XCTestCase {
         
     }
     
+    func testMultipleNumbersReturnsSum() throws {
+        
+        let calculator = StringCalculator()
+        XCTAssertEqual(try calculator.add("1,2,3"), 6)
+    }
+    
 }
