@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.text = "Sum: 0"
+        resultLabel.text = " "
         resultLabel.textColor = .systemGreen
     }
 

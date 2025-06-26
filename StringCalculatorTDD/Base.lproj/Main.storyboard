@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-dm-xmy">
-                                <rect key="frame" x="25" y="143" width="343" height="159.33333333333337"/>
+                                <rect key="frame" x="25" y="143" width="343" height="161.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum: 0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHJ-vG-A1Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="19.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LhZ-CN-1Zn">
-                                        <rect key="frame" x="0.0" y="39.333333333333343" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="41.666666666666657" width="343" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Fp1-pl-lKL"/>
                                         </constraints>
@@ -42,7 +42,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pho-xa-yRT">
-                                        <rect key="frame" x="0.0" y="109.33333333333334" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="111.66666666666666" width="343" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gHD-qd-knd"/>

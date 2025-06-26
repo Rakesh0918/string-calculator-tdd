@@ -10,7 +10,9 @@ import Foundation
 final class StringCalculator {
     
     func add(_ numbers: String) throws -> Int {
-        return numbers.isEmpty ? 0 : 0
+        guard !numbers.isEmpty else { return 0 }
+        let tokens = numbers.components(separatedBy: ",").compactMap { Int($0) }
+        return tokens.reduce(0, +)
     }
     
 }
